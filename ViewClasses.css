@@ -1,0 +1,134 @@
+/* Container for the classes list */
+.classes-list-container {
+  padding: 30px;
+  background-color: #f8f9fa; /* Light grey background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 90% width of the screen to make it large but not fullscreen */
+  max-width: 1200px; /* Restrict maximum width */
+  width: 90%;
+  margin: 50px auto;
+  font-family: Arial, sans-serif;
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+  width: 500px;
+  height: 300px;
+}
+
+/* Header for the list */
+.list-header {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Styling for the unordered list */
+.classes-list {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of items to next line */
+  gap: 20px; /* Space between items */
+  padding: 0;
+  margin: 0;
+  justify-content: center; /* Center the items horizontally */
+}
+
+/* Each class item */
+.class-item {
+  display: flex;
+  flex-direction: column; /* Stack the content vertically */
+  justify-content: space-between; /* Space out the content vertically */
+  align-items: center; /* Center content horizontally */
+  padding: 15px; /* Reduced padding */
+  background-color: #ffffff; /* White background for class items */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  width: 180px; /* Decreased width for each item */
+  min-height: 100px; /* Decreased height for each item */
+  text-align: center; /* Center the text inside the box */
+  padding-bottom: 10px; /* Reduced padding at the bottom */
+}
+
+/* Hover effect for each class item */
+.class-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for class details */
+.class-details {
+  font-size: 13px; /* Slightly smaller font size */
+  color: #555;
+  margin-bottom: 8px; /* Reduced margin */
+  line-height: 1.4; /* Better line spacing */
+}
+
+/* Specific styling for class name */
+.class-name {
+  font-size: 15px; /* Smaller font size for class name */
+  font-weight: bold;
+  color: #007bff; /* Blue color for class name */
+  margin-bottom: 5px; /* Space below the class name */
+}
+
+/* Styling for teacher and subject */
+.teacher-subject {
+  font-size: 13px;
+  color: #666; /* Lighter color for teacher and subject */
+  font-style: italic;
+  margin-bottom: 5px; /* Space between teacher and subject */
+}
+
+/* Styling for class schedule */
+.schedule {
+  font-size: 13px;
+  color: #28a745; /* Green color for schedule */
+  margin-bottom: 8px; /* Reduced space below the schedule */
+}
+
+/* Delete button */
+.delete-class-button {
+  padding: 6px 10px; /* Smaller padding */
+  font-size: 13px; /* Smaller font size */
+  color: #fff;
+  background-color: #dc3545; /* Red background */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  align-self: flex-start; /* Align button to the left */
+}
+
+.delete-class-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+  transform: translateY(-2px);
+}
+
+.delete-class-button:active {
+  transform: translateY(0);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 1024px) {
+  .classes-list-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .class-item {
+    width: 170px; /* Even smaller width for medium screens */
+    min-height: 160px; /* Reduced height */
+  }
+}
+
+@media (max-width: 768px) {
+  .class-item {
+    width: 150px; /* Smaller width for smaller screens */
+    min-height: 140px; /* Reduced height for small screens */
+  }
+
+  .classes-list {
+    justify-content: flex-start; /* Align items to the start for smaller screens */
+  }
+}

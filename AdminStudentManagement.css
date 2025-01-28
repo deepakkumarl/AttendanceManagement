@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fc;
+}
+
+.admin-student-management {
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.message {
+    color: #4caf50;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 15px; /* Increased margin for more space */
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #e0f7fa;
+}
+
+/* Updated class-item styling for horizontal layout */
+.class-item {
+    font-size: 1.2rem;
+    width: 900px;
+    font-weight: bold;
+    color: #00796b;
+    cursor: pointer;
+    margin-bottom: 20px; /* Added margin between classes */
+}
+
+.class-item ul {
+    padding-left: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap; /* Allow the items to wrap if needed */
+    gap: 15px; /* Space between student items */
+}
+
+.class-item li {
+    font-size: 1rem;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 340px; /* Control the width of each student item */
+    border-radius: 8px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+
+}
+
+.class-item li:hover {
+    background-color: #b2ebf2;
+}
+
+/* Delete button style */
+.delete-button {
+    background-color: #ff4d4f;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 8px;
+}
+
+.delete-button:hover {
+    background-color: #f44336;
+}
+
+/* Form Styles */
+.form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #00796b;
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #004d40;
+}
+
+button[type="submit"]:active {
+    background-color: #00332e;
+}

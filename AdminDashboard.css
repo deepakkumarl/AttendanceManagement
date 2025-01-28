@@ -1,0 +1,86 @@
+/* Main container with attractive background */
+.admin-dashboard {
+    position: relative;
+    height: 90vh; /* Full screen height */
+    width: 90vw;  /* Full screen width */
+    background: linear-gradient(135deg, #2e3192, #1bffff); /* Professional gradient */
+    background-size: cover; /* Ensure the background covers the entire viewport */
+    background-position: center; /* Center the background image */
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box; /* Include padding in the element's total width/height */
+    overflow: hidden; /* Prevent unwanted scrollbars */
+    padding: 0; /* No padding */
+}
+
+/* Welcome message styling */
+.admin-dashboard .welcome {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+    letter-spacing: 2px;
+    transition: font-size 0.3s ease; /* Smooth transition for font size */
+}
+
+/* Logout button styling */
+.admin-dashboard .logout-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2e3192;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for button styles */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.admin-dashboard .logout-button:hover {
+    background-color: red;
+    color: white;
+    transform: scale(1.1);
+}
+
+.admin-dashboard .logout-button:active {
+    background-color: #2e3192;
+    color: white;
+    transform: scale(1);
+}
+
+/* Responsive design for medium and larger screens */
+@media (min-width: 600px) {
+    .admin-dashboard .welcome {
+        font-size: 4rem; /* Increase font size for larger screens */
+    }
+
+    .admin-dashboard .logout-button {
+        font-size: 1.1rem; /* Make the logout button slightly larger */
+        padding: 12px 24px; /* Adjust padding for larger screens */
+    }
+}
+
+/* Responsive design for large screens (laptops/desktops) */
+@media (min-width: 1024px) {
+    .admin-dashboard {
+        padding: 40px; /* More padding for larger screens */
+    }
+
+    .admin-dashboard .welcome {
+        font-size: 5rem; /* Larger font size for even bigger screens */
+    }
+
+    .admin-dashboard .logout-button {
+        font-size: 1.2rem; /* Even larger logout button */
+        padding: 14px 28px; /* Increase padding */
+    }
+}

@@ -1,0 +1,55 @@
+/* Main container for the profile */
+.profile {
+    font-family: 'Arial', sans-serif;
+    width: 800px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px; /* Keeps the profile content centered */
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #2e3192, #1bffff); /* Gradient background */
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile title (name) styling */
+.profile h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Profile information styling */
+.profile p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent background for the text */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Add hover effect to the profile text */
+.profile p:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .profile {
+        padding: 15px;
+    }
+
+    .profile h1 {
+        font-size: 2rem;
+    }
+
+    .profile p {
+        font-size: 1rem;
+    }
+}
